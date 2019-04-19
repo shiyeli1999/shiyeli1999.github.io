@@ -1,6 +1,6 @@
 a{
-	color: white;
-	font-family; avenir;
+	color: purple;
+	font-family; "Comic Sans MS";
 
 
 }
@@ -10,13 +10,18 @@ a:hover{
 }
 
 #header {
-	//code here
+	font-family; "Comic Sans MS";
 }
 
-.class{
-	//code
+.row{
+	color: purple;
+	font-family; "Comic Sans MS";
+
 }
 
 body {
 	background-color: grey;
+	background-image: url("flower.jpg");
+	font-family; "Comic Sans MS";
+	font-style: italic;
 }
