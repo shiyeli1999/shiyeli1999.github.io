@@ -2,7 +2,7 @@ body{
 	color: #40514E;
 	margin: 0px;
 	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Martel Sans', sans-serif;
 
 }
 
@@ -24,7 +24,7 @@ h2{
 h3{
 	font-size: 25px;
 	color: #316ea3;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Martel Sans', sans-serif;
 	font-weight: bold;
 }
 
@@ -35,7 +35,7 @@ h5{
 
 a{
 	color: #316ea3;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Martel Sans', sans-serif;
 	margin: 10px 20px;
 	text-decoration: none;
 }
@@ -80,6 +80,8 @@ p{
 }
 
 .intro{
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
 	color: #40514E;
 	margin: 0 auto 0 auto;
 	width: 30%;
@@ -162,7 +164,7 @@ p{
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
   border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Martel Sans', sans-serif;
   color: #ffffff;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
