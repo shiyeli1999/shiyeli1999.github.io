@@ -67,8 +67,8 @@ p{
 
 /*fade in effect for the intro text*/
 .top-container h2{
-	margin-bottom: 30px;
-	margin-top: 10px;
+	margin-bottom: 40px;
+	margin-top: 20px;
     -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
 
 }
