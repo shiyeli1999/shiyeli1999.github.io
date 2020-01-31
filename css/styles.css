@@ -9,7 +9,7 @@ body{
 h1{
 	color: #316ea3;
 	font-size: 5.625rem;
-	margin: 50px auto 0 auto;
+	margin: 30px auto 0 auto;
 	font-family: 'Indie Flower', cursive;
 }
 
@@ -59,10 +59,41 @@ p{
 }
 
 .top-container{
-	background-color: #e6f5ff;
+	background-color: #deeeff;
 	position: relative;
 	padding-top: 100px;
+	-webkit-animation: bluesky 3s;
 }
+
+/*fade in effect for the intro text*/
+.top-container h2{
+	margin-bottom: 30px;
+	margin-top: 10px;
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@keyframes bluesky {
+    from { background-color: #f5faff;}
+    to   { background-color: #deeeff;}
+}
+
+@-webkit-keyframes bluesky {
+    from { background-color: #f5faff;}
+    to   { background-color: #deeeff;}
+}
+
 
 .middle-container{
 	padding-top: 100px;
@@ -70,7 +101,7 @@ p{
 }
 
 .bottom-container{
-	background-color: #e6f5ff;
+	background-color: #deeeff;
 	margin-top: 50px;
 	padding: 50px 0 20px;
 }
@@ -98,6 +129,17 @@ p{
 	position: absolute;
 	left: 200px;
 	bottom: 300px;
+	-webkit-animation: bottomCloud 5s; 
+}
+
+@keyframes bottomCloud {
+    from { left: 300px; }
+    to   { left: 200px; }
+}
+
+@-webkit-keyframes bottomCloud {
+    from { left: 300px; }
+    to   { left: 200px; }
 }
 
 .top-cloud{
@@ -105,7 +147,19 @@ p{
 	position: absolute;
 	right: 200px;
 	top: 30px;
+	-webkit-animation: topCloud 5s; 
 }
+
+@keyframes topCloud {
+    from { right: 300px; }
+    to   { right: 200px; }
+}
+
+@-webkit-keyframes topCloud {
+    from { right: 300px; }
+    to   { right: 200px; }
+}
+
 
 .skills1{
 	border-radius: 100%;
