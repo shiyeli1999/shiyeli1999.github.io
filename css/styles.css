@@ -11,6 +11,7 @@ h1{
 	font-size: 5.625rem;
 	margin: 30px auto 0 auto;
 	font-family: 'Indie Flower', cursive;
+	text-shadow: 1px 0 #8c92ac;
 }
 
 h2{
@@ -172,6 +173,11 @@ p{
 	margin-right: 30px;
 	margin-bottom: 15px;
 	width: 30%;
+
+	transition: transform .2s;
+}
+.skills1:hover{
+  	transform: scale(1.1); 
 }
 
 .skills2{
@@ -180,6 +186,10 @@ p{
 	margin-left: 30px;
 	margin-bottom: 15px;
 	width: 30%;
+	transition: transform .2s;
+}
+.skills2:hover{
+  	transform: scale(1.1); 
 }
 
 .projects1{
@@ -188,6 +198,10 @@ p{
 	margin-right: 30px;
 	margin-bottom: 15px;
 	width: 30%;
+	transition: transform .2s;
+}
+.projects1:hover{
+  	transform: scale(1.1); 
 }
 
 .projects2{
@@ -196,6 +210,10 @@ p{
 	margin-left: 30px;
 	margin-bottom: 15px;
 	width: 30%;
+	transition: transform .2s;
+}
+.projects2:hover{
+  	transform: scale(1.1); 
 }
 
 .projects-h3{
