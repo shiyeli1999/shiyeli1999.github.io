@@ -171,7 +171,7 @@ p{
 	border-radius: 100%;
 	float: left;
 	margin-right: 30px;
-	margin-bottom: 15px;
+	margin-bottom: 170px;
 	width: 30%;
 
 	transition: transform .2s;
@@ -184,35 +184,11 @@ p{
 	border-radius: 100%;
 	float: right;
 	margin-left: 30px;
-	margin-bottom: 15px;
+	margin-bottom: 170px;
 	width: 30%;
 	transition: transform .2s;
 }
 .skills2:hover{
-  	transform: scale(1.1); 
-}
-
-.projects1{
-	border-radius: 100%;
-	float: left;
-	margin-right: 30px;
-	margin-bottom: 15px;
-	width: 30%;
-	transition: transform .2s;
-}
-.projects1:hover{
-  	transform: scale(1.1); 
-}
-
-.projects2{
-	border-radius: 100%;
-	float: right;
-	margin-left: 30px;
-	margin-bottom: 15px;
-	width: 30%;
-	transition: transform .2s;
-}
-.projects2:hover{
   	transform: scale(1.1); 
 }
 
