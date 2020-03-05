@@ -60,7 +60,6 @@ p{
 }
 
 .top-container{
-	height: 100vh;
 	background-color: #deeeff;
 	position: relative;
 	-webkit-animation: bluesky 3s;
@@ -134,7 +133,6 @@ p{
 	width: 10%;
 	position: absolute;
 	left: 200px;
-	bottom: 250px;
 	-webkit-animation: bottomCloud 5s; 
 }
 
