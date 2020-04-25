@@ -192,9 +192,14 @@ p{
 
 .projects-h3{
 	font-family: 'Indie Flower', cursive;
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
+
+.contact-me {
+	width: 80%;
+	margin: 0 auto;
+}
 
 .contact-me-description{
 	width: 40%;
