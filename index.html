@@ -11,6 +11,14 @@
 
 <body>
   <div class="top-container">
+    <div class="nav-bar">
+      <ul>
+          <a href="#about">👩🏻About</a>
+          <a href="#projects">📚Portfolio</a>
+          <a href="#music">🎻Music</a>
+          <a href="#contact-me">📞Contact Me</a>
+      </ul>
+    </div>
     <div class="top-container-content">
       <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
       <h1>Doris Li</h1>
@@ -22,7 +30,7 @@
 
 
   <div class="middle-container">
-    <div class="profile">
+    <div class="profile" id="about">
       <img src="images/doris.png" alt="my-profile">
       <h2>Hello.</h2>
       <p class="intro">I am a student at the University of Michigan studying <b>Cello Performance</b> and <b>Computer
@@ -32,172 +40,274 @@
     <hr>
 
 
-    <div class="skills">
+    <div class="skills" id="experience">
       <h2>My Experience</h2>
 
-      <div class="skill-row">
-        <a href="https://www.ithaka.org/">
-          <img class="skills1" src="images/ithaka.png" alt="Ithaka Logo">
-        </a>
-        <h3>ITHAKA Harbor</h3>
-        <h5>Front-end Software Engineering Intern | May 2019 - August 2019</h5>
-        <p>📍Created and updated accessible UI components across 4 cloud-based web apps in an Agile team</p>
-        <p>📍Deployed new interfaces to production, improving user experience for 1500+ institutions and 1100+ publishers on JSTOR</p>
-        <p>📍Improved test coverage by writing automated unit tests with Jest and integration browser tests with Cucumber software</p>
+      <div class="skill-row-left skill-row">
+        <div class="experience-img">
+          <a href="https://www.doordash.com/" target="_blank">
+            <img class="skills-img" src="images/doordash.jpeg" alt="Doordash Logo">
+          </a>
+        </div>
+        <div class="experience-text">
+          <h3>Doordash.Inc</h3>
+          <h5>Software Engineering Intern | May 2021</h5>
+          <p>Incoming Software Engineering Intern on Doordash's Merchant Selection Team</p>
+        </div>
       </div>
 
-      <div class="skill-row">
-        <a href="http://artsatmichigan.umich.edu/">
-          <img class="skills2" src="images/artsatmichigan.png" alt="geecs">
-        </a>
-        <h3>Arts at Michigan</h3>
-        <h5>Web Developer & Designer | Mar. 2020 - Present</h5>
-        <p>📍Managing incoming change requests in the internal school database on a weekly basis</p>
-        <p>📍Expanding the Arts at Michigan website to host new college art programs using data
-          retrieved from MySQL</p>
+      <div class="skill-row-right skill-row">
+        <div class="experience-text">
+          <h3>ITHAKA Harbor</h3>
+          <h5>Front-end Software Engineering Intern | May 2020 - August 2020</h5>
+          <p>📍Created and updated accessible UI components across 4 cloud-based web apps in an Agile team</p>
+          <p>📍Deployed new interfaces to production, improving user experience for 1500+ institutions and 1100+
+            publishers on JSTOR</p>
+          <p>📍Improved test coverage by writing automated unit tests with Jest and integration browser tests with
+            Cucumber software</p>
+        </div>
+        <div class="experience-img">
+          <a href="https://www.ithaka.org/" target="_blank">
+            <img class="skills-img" src="images/ithaka.png" alt="Ithaka Logo">
+          </a>
+        </div>
       </div>
 
-      <div class="skill-row">
-        <a href="https://www.michigandaily.com/">
-          <img class="skills1" src="images/daily.png" alt="Michigan Daily Logo">
-        </a>
-        <h3>The Michigan Daily</h3>
-        <h5>Front-end Software Engineer | Oct. 2019 - Present</h5>
-        <p>📍Using HTML, SCSS, and React.js to redesign the ​GradeGuide​ website, an online tool that allows students to
-          compare course grade distribution data from college courses</p>
-        <p>📍Collaborating with the Design team and Back-end team in weekly meetings to create and update dynamic web
-          features</p>
+      <div class="skill-row-left skill-row">
+        <div>
+          <a href="https://geecs.eecs.umich.edu/" target="_blank">
+            <img class="skills-img" src="images/geecs.png" alt="geecs">
+          </a>
+        </div>
+        <div>
+          <h3>Girls in EECS (GEECS)</h3>
+          <h5>Vice President | Jan. 2019 - Present</h5>
+          <p>📍Organizing and connecting with company sponsors on weekly workshops and tech talks dedicated to the
+            professional development of 100+ women engineers in GEECS</p>
+          <p>📍Designing and developing GEECS’s marketing materials including physical promotional products and digital
+            content on social media platforms, with posts reaching almost 5,000 users on Facebook</p>
+        </div>
       </div>
 
-      <div class="skill-row">
-        <a href="https://geecs.eecs.umich.edu/">
-          <img class="skills2" src="images/geecs.png" alt="geecs">
-        </a>
-        <h3>Girls in EECS (GEECS)</h3>
-        <h5>Chair of Marketing | Jan. 2019 - Present</h5>
-        <p>📍Organizing and connecting with company sponsors on weekly workshops and tech talks dedicated to the
-          professional development of 100+ women engineers in GEECS</p>
-        <p>📍Designing and developing GEECS’s marketing materials including physical promotional products and digital
-          content on social media platforms, with posts reaching almost 5,000 users on Facebook</p>
+      <div class="skill-row-right skill-row">
+        <div>
+          <h3>Arts at Michigan</h3>
+          <h5>Web Developer & Designer | Mar. 2020 - Present</h5>
+          <p>📍Managing incoming change requests in the internal school database on a weekly basis using PHP</p>
+          <p>📍Expanding the Arts at Michigan website to host new college art programs using data
+            retrieved from MySQL</p>
+        </div>
+        <div>
+          <a href="http://artsatmichigan.umich.edu/" target="_blank">
+            <img class="skills-img" src="images/artsatmichigan.png" alt="geecs">
+          </a>
+        </div>
       </div>
 
-      <div class="skill-row">
-        <a href="https://www.alive-inc.org/">
-          <img class="skills1" src="images/alive.png" alt="Alive Logo">
-        </a>
-        <h3>ALIVE! in Alexandria, VA</h3>
-        <h5>Program Assistant Intern | Apr. - Jun. 2018</h5>
-        <p>📍Successfully attracted 50+ local sponsors as well as 200+ volunteers for a 5K Walkathon fundraising event
-        </p>
-        <p>📍Created graphics and videos used for marketing events on social media platforms, which increased ALIVE!’s
-          Facebook impressions by 300%, from 1,500 to 4,500 compared to previous year</p>
+      <div class="skill-row-left skill-row">
+        <div>
+          <a href="https://www.michigandaily.com/" target="_blank">
+            <img class="skills-img" src="images/daily.png" alt="Michigan Daily Logo">
+          </a>
+        </div>
+        <div>
+          <h3>The Michigan Daily</h3>
+          <h5>Front-end Software Engineer | Oct. 2019 - May 2020</h5>
+          <p>📍Using HTML, SCSS, and React.js to redesign the ​GradeGuide​ website, an online tool that allows students
+            to
+            compare course grade distribution data from college courses</p>
+          <p>📍Collaborating with the Design team and Back-end team in weekly meetings to create and update dynamic web
+            features</p>
+        </div>
       </div>
+
+      <!-- <div class="skill-row">
+        <div>
+          <a href="https://www.alive-inc.org/">
+            <img class="skills-img" src="images/alive.png" alt="Alive Logo">
+          </a>
+        </div>
+        <div>
+          <h3>ALIVE! in Alexandria, VA</h3>
+          <h5>Program Assistant Intern | Apr. - Jun. 2018</h5>
+          <p>📍Successfully attracted 50+ local sponsors as well as 200+ volunteers for a 5K Walkathon fundraising event
+          </p>
+          <p>📍Created graphics and videos used for marketing events on social media platforms, which increased ALIVE!’s
+            Facebook impressions by 300%, from 1,500 to 4,500 compared to previous year</p>
+        </div>
+      </div> -->
+
     </div>
     <hr>
 
-    <div class="skills">
+    <div class="Projects">
       <h2>My Personal Projects</h2>
       <h3 class="projects-h3">( All hosted on Github! Click on the pictures to see what they look like!😋)</h3>
 
-      <div class="skill-row">
-        <a href="https://shiyeli1999.github.io/My-Sticky-Notes/">
-          <img class="skills1" src="images/sticky-note.png" alt="My Sticky Notes!">
-        </a>
-        <h3>My Sticky Notes</h3>
-        <h5>Javascript (React.js), HTML, CSS | Jan. 2020</h5>
-        <p>📍Implemented a React App that simulates online sticky notes through React.js components, props, conditional
-          rendering, forms, maps, events and keys</p>
-        <p>📍Handled the addition and deletion of note components by manipulating state through Hooks</p>
-        <p>🌟 Currently working on the database for this project!</p>
+      <div class="skill-row-left skill-row" id="projects">
+        <div>
+          <a href="https://eecs493-project-d1281.web.app/" target="_blank">
+            <img class="skills-img" src="images/pawlo-alto.png" alt="My Sticky Notes!">
+          </a>
+        </div>
+        <div>
+          <h3>Pawlo Alto</h3>
+          <h5>Javascript (React.js), HTML, CSS, Firebase, Google Maps API | Apr. 2021</h5>
+          <p>📍Created a React App that allows pet owners in Ann Arbor to connect with other pet owners</p>
+          <p>📍Used Firebase to store user authentication and posts data, and Google Maps API to display user posts</p>
+          <p>🌟Chat feature coming soon!</p>
+        </div>
       </div>
 
-      <div class="skill-row">
-        <a href="https://shiyeli1999.github.io/Simon-Game/">
-          <img class="skills2" src="images/Simon-game.png" alt="Simon game!">
-        </a>
-        <h3>Simon Game</h3>
-        <h5>Javascript, HTML, CSS, React.js | Aug. - Sept. 2019</h5>
-        <p>📍Created an online mini-game inspired by the traditional Simon-Game using jQuery selectors to manipulate DOM
-          elements as well as jQuery events to generate sound and animations based on user’s actions</p>
-        <p>🌟 Leaderboard feature coming soon!!</p>
-
+      <div class="skill-row-right skill-row">
+        <div>
+          <h3>Doris's Potion Store</h3>
+          <h5>Javascript, HTML, CSS, React.js | Aug. 2020</h5>
+          <p>📍Web App that simulates a full e-commerce potion store website with PayPal’s API and React’s Context API</p>
+        </div>
+        <div>
+          <a href="https://doris-potion-store.netlify.app/" target="_blank">
+            <img class="skills-img" src="images/potion-store.png" alt="Simon game!">
+          </a>
+        </div>
       </div>
 
-      <div class="skill-row">
-        <a href="https://shiyeli1999.github.io/Drum-Kit/">
-          <img class="skills1" src="images/drum-kit.png" alt="drum-kit">
-        </a>
-        <h3>Doris's Drums</h3>
-        <h5>Javascript, HTML, CSS | Jul. 2019</h5>
-        <p>📍Using Javascript functions to implement a drum kit, detecting both "keydown" and "click" events to enable
-          users to generate responses from the desired drums</p>
-        <p>📍Created web animations using HTML and CSS</p>
+      <div class="skill-row-left skill-row">
+        <div>
+          <a href="https://shiyeli1999.github.io/My-Sticky-Notes/" target="_blank">
+            <img class="skills-img" src="images/sticky-note.png" alt="My Sticky Notes!">
+          </a>
+        </div>
+        <div>
+          <h3>My Sticky Notes</h3>
+          <h5>Javascript (React.js), HTML, CSS | Jan. 2020</h5>
+          <p>📍Implemented a React App that simulates online sticky notes through React.js components, props,
+            conditional
+            rendering, forms, maps, events and keys</p>
+          <p>📍Handled the addition and deletion of note components by manipulating state through Hooks</p>
+          <p>🌟 Currently working on the database for this project!</p>
+        </div>
       </div>
 
-      <div class="skill-row">
-        <a href="https://shiyeli1999.github.io/TinDog-Bootstrap/">
-          <img class="skills2" src="images/tindog.png" alt="Tindog!">
-        </a>
-        <h3>Tindog🐶</h3>
-        <h5>HTML, CSS, Bootstrap | Jul. 2019</h5>
-        <p>📍Designed a dynamically-displayed front-end company website landing page using Bootstrap, HTML and CSS</p>
-        <p>📍Employed features such as Nav Bars and Carousels using Bootstrap plugins</p>
-        <p>📍Used media queries to adjust the website’s display based on the screen size of users’ devices</p>
+      <div class="skill-row-right skill-row">
+        <div>
+          <h3>Simon Game</h3>
+          <h5>Javascript, HTML, CSS, React.js | Aug. - Sept. 2019</h5>
+          <p>📍Created an online mini-game inspired by the traditional Simon-Game using jQuery selectors to manipulate
+            DOM
+            elements as well as jQuery events to generate sound and animations based on user’s actions</p>
+          <p>🌟 Leaderboard feature coming soon!!</p>
+        </div>
+        <div>
+          <a href="https://shiyeli1999.github.io/Simon-Game/" target="_blank">
+            <img class="skills-img" src="images/Simon-game.png" alt="Simon game!">
+          </a>
+        </div>
       </div>
+
+      <div class="skill-row-left skill-row">
+        <div>
+          <a href="https://shiyeli1999.github.io/Drum-Kit/" target="_blank">
+            <img class="skills-img" src="images/drum-kit.png" alt="drum-kit">
+          </a>
+        </div>
+        <div>
+          <h3>Doris's Drums</h3>
+          <h5>Javascript, HTML, CSS | Jul. 2019</h5>
+          <p>📍Using Javascript functions to implement a drum kit, detecting both "keydown" and "click" events to enable
+            users to generate responses from the desired drums</p>
+          <p>📍Created web animations using HTML and CSS</p>
+        </div>
+      </div>
+
+      <!-- <div class="skill-row">
+        <div>
+          <a href="https://shiyeli1999.github.io/TinDog-Bootstrap/">
+            <img class="skills-img" src="images/tindog.png" alt="Tindog!">
+          </a>
+        </div>
+        <div>
+          <h3>Tindog🐶</h3>
+          <h5>HTML, CSS, Bootstrap | Jul. 2019</h5>
+          <p>📍Designed a dynamically-displayed front-end company website landing page using Bootstrap, HTML and CSS</p>
+          <p>📍Employed features such as Nav Bars and Carousels using Bootstrap plugins</p>
+          <p>📍Used media queries to adjust the website’s display based on the screen size of users’ devices</p>
+        </div>
+      </div> -->
 
     </div>
     <hr>
 
-    <div>
+    <div class="skills-languages">
       <h2>My Skills & Languages </h2>
-      <p>Experienced: C++, Javascript, HTML, CSS</p>
-      <p>Tools: Git, Bootstrap, React.js, Node.js, Express.js, MongoDB</p>
+      <p><b>Experienced</b>: C++, Javascript, Python, HTML, CSS</p>
+      <p><b>Tools</b>: Git, Bootstrap, React.js, Node.js, Express.js, MongoDB</p>
+      <p><b>Related Coursework</b>: Web Systems, User Interface Development, Information Retrieval and Web Search, Foundations of Computer Science, Computer Organization, Data Structures and Algorithms</p>
     </div>
     <hr>
 
-    <div class="skills">
+    <div class="skills" id="music">
       <h2>My Musical Experience</h2>
       <h3 class="projects-h3">( If music be the food of love, play on... 🌸 Click on the pics to hear my music 🎵 )</h3>
 
-      <div class="skill-row">
-        <a href="https://www.youtube.com/watch?v=yBKh0KP13F8">
-          <img class="skills1" src="images/electric-cello.png" alt="electric cello">
-        </a>
-        <h3>Taylor Swift on Electric Cello</h3>
-        <p>💥MY OWN ARRANGEMENT of a combo of NINE Taylor Swift’s songs using an electric cello and a loop station!</p>
-        <p>💥Live Performance for 500+ people in auditorium during Episcopal High School's Jay Walker Symposium</p>
+      <div class="skill-row-left skill-row">
+        <div>
+          <a href="https://www.youtube.com/watch?v=yBKh0KP13F8" target="_blank">
+            <img class="skills-img" src="images/electric-cello.png" alt="electric cello">
+          </a>
+
+        </div>
+        <div>
+          <h3>Taylor Swift on Electric Cello</h3>
+          <p>💥MY OWN ARRANGEMENT of a combo of NINE Taylor Swift’s songs using an electric cello and a loop station!
+          </p>
+          <p>💥Live Performance for 500+ people in auditorium during Episcopal High School's Jay Walker Symposium</p>
+        </div>
       </div>
 
-      <div class="skill-row">
-        <a href="https://www.youtube.com/watch?v=CPZEL-zMoyE">
-          <img class="skills2" src="images/doris-cello.png" alt="Doris cello">
-        </a>
-        <h3>Classical Music</h3>
-        <p>💥What I've been working on: Boccherini Cello Sonata No.6 in A Major</p>
-        <p>💥Coming up this semester: Tchaikovsky's Rococo Variations!</p>
+      <div class="skill-row-right skill-row">
+        <div>
+          <h3>Classical Music</h3>
+          <p>💥What I've been working on: Wieniawski Caprice No.18</p>
+          <p>💥Coming up this semester: Korngold Cello Concerto!</p>
 
+
+        </div>
+        <div>
+          <a href="https://www.youtube.com/watch?v=mzvaeISu4eY" target="_blank">
+            <img class="skills-img" src="images/doris-cello.png" alt="Doris cello">
+          </a>
+        </div>
+        <!-- <iframe src="https://www.youtube.com/embed/mzvaeISu4eY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       </div>
 
-      <div class="skill-row">
-        <a href="https://www.youtube.com/channel/UC0BoEVnQCd63-86yZDte3yw">
-          <img class="skills1" src="images/D&J.jpg" alt="D&J">
-        </a>
-        <h3>D & J Productions</h3>
-        <p>💥Started a YouTube Channel with my best friend and now we have 7,000+ Subscribers🔝 3 videos over 100,000
-          views 😱</p>
-        <p>💥Our own cover and arrangement of the coolest music + funny clips of our daily struggles as cellists!! </p>
+      <div class="skill-row-left skill-row">
+        <div>
+          <a href="https://www.youtube.com/channel/UC0BoEVnQCd63-86yZDte3yw" target="_blank">
+            <img class="skills-img" src="images/D&J.jpg" alt="D&J">
+          </a>
+        </div>
+        <div>
+          <h3>D & J Productions</h3>
+          <p>💥Started a YouTube Channel with my best friend and now we have 7,000+ Subscribers🔝 3 videos over 100,000
+            views 😱</p>
+          <p>💥Our own cover and arrangement of the coolest music + funny clips of our daily struggles as cellists!!
+          </p>
+        </div>
       </div>
 
     </div>
 
     <hr>
-    <div class="contact-me">
+    <div class="contact-me" id="contact-me">
       <h2>Get In Touch</h2>
       <h3>If you think I have a chance of getting employed...or if you love music :)</h3>
       <p class="contact-me-description">Let me know! <b>HIRE ME</b> as your software engineer and you get a <b>FREE</b>
         professional cellist for your wedding 😱 BEST 2-in-1 deal ever!!🤩</p>
-      <p class="contact-me-description">📩 shiyeli@umich.edu | ☎ 571-645-2460</p>
-      <a class="butn" href="mailto:shiyeli@umich.edu">CONTACT ME</a>
+      <div class="contact-me-description"><div class="contact-me-info">📩 shiyeli@umich.edu</div> | <div class="contact-me-info">☎ 571-645-2460</div></div>
+      <div>
+          <a class="butn" href="mailto:shiyeli@umich.edu">CONTACT ME</a>
+      </div>
     </div>
   </div>
 
@@ -210,7 +320,7 @@
     <a class="footer-link" href="https://www.youtube.com/channel/UC0BoEVnQCd63-86yZDte3yw">YouTube</a>
     <a class="footer-link" href="https://www.linkedin.com/in/shiye-doris-li/">LinkedIn</a>
     <a class="footer-link" href="media/Li_Doris_Resume.pdf" download="media/Li_Doris_Resume.pdf">Resume</a>
-    <p class="copy-right">© 2020 Doris Shiye Li</p>
+    <p class="copy-right">© 2021 Doris Shiye Li</p>
   </div>
 </body>
 
