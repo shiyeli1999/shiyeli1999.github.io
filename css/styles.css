@@ -65,12 +65,14 @@ p {
 .nav-bar {
   text-align: left;
   margin-left: 10px;
+  z-index: 5;
 }
 .nav-bar a {
   margin-right: 10px;
 }
 .nav-bar a:hover {
   color: black;
+  z-index: -1;
 }
 
 ul {
@@ -206,13 +208,10 @@ li a:hover:not(.active) {
   }
 }
 
-/* .experience-img{
-	display: inline-block;
+.experience-img-mobile{
+	display: hidden;
 }
 
-.experience-text{
-	display: inline-block;
-} */
 .skill-row {
   width: 60%;
   margin: 100px auto 100px auto;
@@ -223,6 +222,7 @@ li a:hover:not(.active) {
 }
 .skill-row-left {
 	grid-template-columns: 30% 70%;
+	/* grid-template-columns: 100%; */
 }
 .skill-row > img {
   max-width: 90%;
@@ -311,8 +311,35 @@ li a:hover:not(.active) {
   padding: 20px 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
+	.mountain{
+		width: 70%;
+	}
   .skill-row-left {
     grid-template-columns: 100%;
   }
+  .skill-row-right {
+    grid-template-columns: 100%;
+  }
+
+  .experience-img {
+	  display: none;
+  }
+  .experience-img-mobile{
+	  display: inline-block;
+  }
 }
+
+.parallax {
+	/* The image used */
+	background-image: url("img_parallax.jpg");
+  
+	/* Set a specific height */
+	min-height: 500px;
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
