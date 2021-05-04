@@ -3,28 +3,48 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Doris Li</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Doris Shiye Li</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Martel+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://kit.fontawesome.com/d48a64d3ee.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="typeWriter()">
   <div class="top-container">
-    <div class="nav-bar">
+    <!-- <div class="nav-bar">
       <ul>
-          <a href="#about">👩🏻About</a>
-          <a href="#projects">📚Portfolio</a>
-          <a href="#music">🎻Music</a>
-          <a href="#contact-me">📞Contact Me</a>
+        <a href="#about">👩🏻About</a>
+        <a href="#projects">📚Portfolio</a>
+        <a href="#music">🎻Music</a>
+        <a href="#contact-me">📞Contact Me</a>
       </ul>
+    </div> -->
+    <div class="w3-bar" id="myDavBar">
+      <a class="w3-bar-item w3-button w3-hover-blue w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-blue"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-hover-blue"><i class="fa fa-th"></i> PROJECTS</a>
+      <a href="#contact-me" class="w3-bar-item w3-button w3-hide-small w3-hover-blue"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
-    <div class="top-container-content">
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+      <a href="#contact-me" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
+    <div class="top-container-content" id="home">
       <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-      <h1>Doris Li</h1>
-      <h2>A Cellist on her way to become a Software Engineer!</h2>
+      <div class="h1-new">Doris Shiye Li</div>
+      <div class="title-txt" id="title-txt"></div>
       <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-      <img class="mountain"src="images/mountain.png" alt="mountain-img">
+      <img class="mountain" src="images/mountain.png" alt="mountain-img">
     </div>
   </div>
 
@@ -32,7 +52,7 @@
   <div class="middle-container">
     <div class="profile" id="about">
       <img src="images/doris.png" alt="my-profile">
-      <h2>Hello.</h2>
+      <div class="h2-new">Hello.</div>
       <p class="intro">I am a student at the University of Michigan studying <b>Cello Performance</b> and <b>Computer
           Science</b>.</p>
       <p class="intro">🌟Welcome to my website!🌟 </p>
@@ -41,7 +61,11 @@
 
 
     <div class="skills" id="experience">
-      <h2>My Experience</h2>
+      <div class="parallax my-experience-img">
+        <div class="parallax-title">
+          <div class="h2-new">My Experience</div>
+        </div>
+      </div>
 
       <div class="skill-row-left skill-row">
         <div>
@@ -50,7 +74,7 @@
           </a>
         </div>
         <div class="experience-text">
-          <h3>Doordash.Inc</h3>
+          <div class="h3-new">Doordash.Inc</div>
           <h5>Software Engineering Intern | May 2021</h5>
           <p>Incoming Software Engineering Intern on Doordash's Merchant Selection Team</p>
         </div>
@@ -58,12 +82,12 @@
 
       <div class="skill-row-right skill-row">
         <div class="experience-img-mobile">
-            <a href="https://www.ithaka.org/" target="_blank">
-              <img class="skills-img" src="images/ithaka.png" alt="Ithaka Logo">
-            </a>
-          </div>
+          <a href="https://www.ithaka.org/" target="_blank">
+            <img class="skills-img" src="images/ithaka.png" alt="Ithaka Logo">
+          </a>
+        </div>
         <div class="experience-text">
-          <h3>ITHAKA Harbor</h3>
+          <div class="h3-new">ITHAKA Harbor</div>
           <h5>Front-end Software Engineering Intern | May 2020 - August 2020</h5>
           <p>📍Created and updated accessible UI components across 4 cloud-based web apps in an Agile team</p>
           <p>📍Deployed new interfaces to production, improving user experience for 1500+ institutions and 1100+
@@ -85,7 +109,7 @@
           </a>
         </div>
         <div>
-          <h3>Girls in EECS (GEECS)</h3>
+          <div class="h3-new">Girls in EECS (GEECS)</div>
           <h5>Vice President | Jan. 2019 - Present</h5>
           <p>📍Organizing and connecting with company sponsors on weekly workshops and tech talks dedicated to the
             professional development of 100+ women engineers in GEECS</p>
@@ -95,13 +119,13 @@
       </div>
 
       <div class="skill-row-right skill-row">
-          <div class="experience-img-mobile">
-              <a href="http://artsatmichigan.umich.edu/" target="_blank">
-                <img class="skills-img" src="images/artsatmichigan.png" alt="geecs">
-              </a>
-            </div>
+        <div class="experience-img-mobile">
+          <a href="http://artsatmichigan.umich.edu/" target="_blank">
+            <img class="skills-img" src="images/artsatmichigan.png" alt="geecs">
+          </a>
+        </div>
         <div>
-          <h3>Arts at Michigan</h3>
+          <div class="h3-new">Arts at Michigan</div>
           <h5>Web Developer & Designer | Mar. 2020 - Present</h5>
           <p>📍Managing incoming change requests in the internal school database on a weekly basis using PHP</p>
           <p>📍Expanding the Arts at Michigan website to host new college art programs using data
@@ -121,7 +145,7 @@
           </a>
         </div>
         <div>
-          <h3>The Michigan Daily</h3>
+          <div class="h3-new">The Michigan Daily</div>
           <h5>Front-end Software Engineer | Oct. 2019 - May 2020</h5>
           <p>📍Using HTML, SCSS, and React.js to redesign the ​GradeGuide​ website, an online tool that allows students
             to
@@ -138,7 +162,7 @@
           </a>
         </div>
         <div>
-          <h3>ALIVE! in Alexandria, VA</h3>
+          <div class="h3-new">ALIVE! in Alexandria, VA</div>
           <h5>Program Assistant Intern | Apr. - Jun. 2018</h5>
           <p>📍Successfully attracted 50+ local sponsors as well as 200+ volunteers for a 5K Walkathon fundraising event
           </p>
@@ -151,17 +175,22 @@
     <hr>
 
     <div class="Projects">
-      <h2>My Personal Projects</h2>
-      <h3 class="projects-h3">( All hosted on Github! Click on the pictures to see what they look like!😋)</h3>
+      <div class="parallax projects-background" id="projects">
+        <div class="parallax-title">
+          <div class="h2-new">My Personal Projects</div>
+        </div>
+      </div>
 
-      <div class="skill-row-left skill-row" id="projects">
+      <div class="skill-row-left skill-row">
         <div>
           <a href="https://eecs493-project-d1281.web.app/" target="_blank">
             <img class="skills-img" src="images/pawlo-alto.png" alt="My Sticky Notes!">
           </a>
         </div>
         <div>
-          <h3>Pawlo Alto</h3>
+          <a href="https://eecs493-project-d1281.web.app/" target="_blank">
+            <div class="h3-new">Pawlo Alto</div>
+          </a>
           <h5>Javascript (React.js), HTML, CSS, Firebase, Google Maps API | Apr. 2021</h5>
           <p>📍Created a React App that allows pet owners in Ann Arbor to connect with other pet owners</p>
           <p>📍Used Firebase to store user authentication and posts data, and Google Maps API to display user posts</p>
@@ -170,15 +199,16 @@
       </div>
 
       <div class="skill-row-right skill-row">
-          <div class="experience-img-mobile">
-              <a href="https://doris-potion-store.netlify.app/" target="_blank">
-                <img class="skills-img" src="images/potion-store.png" alt="Simon game!">
-              </a>
-            </div>
+        <div class="experience-img-mobile">
+          <a href="https://doris-potion-store.netlify.app/" target="_blank">
+            <img class="skills-img" src="images/potion-store.png" alt="Simon game!">
+          </a>
+        </div>
         <div>
-          <h3>Doris's Potion Store</h3>
+          <div class="h3-new">Doris's Potion Store</div>
           <h5>Javascript, HTML, CSS, React.js | Aug. 2020</h5>
-          <p>📍Web App that simulates a full e-commerce potion store website with PayPal’s API and React’s Context API</p>
+          <p>📍Web App that simulates a full e-commerce potion store website with PayPal’s API and React’s Context API
+          </p>
         </div>
         <div class="experience-img">
           <a href="https://doris-potion-store.netlify.app/" target="_blank">
@@ -194,7 +224,7 @@
           </a>
         </div>
         <div>
-          <h3>My Sticky Notes</h3>
+          <div class="h3-new">My Sticky Notes</div>
           <h5>Javascript (React.js), HTML, CSS | Jan. 2020</h5>
           <p>📍Implemented a React App that simulates online sticky notes through React.js components, props,
             conditional
@@ -205,13 +235,13 @@
       </div>
 
       <div class="skill-row-right skill-row">
-          <div class="experience-img-mobile">
-              <a href="https://shiyeli1999.github.io/Simon-Game/" target="_blank">
-                <img class="skills-img" src="images/Simon-game.png" alt="Simon game!">
-              </a>
-            </div>
+        <div class="experience-img-mobile">
+          <a href="https://shiyeli1999.github.io/Simon-Game/" target="_blank">
+            <img class="skills-img" src="images/Simon-game.png" alt="Simon game!">
+          </a>
+        </div>
         <div>
-          <h3>Simon Game</h3>
+          <div class="h3-new">Simon Game</div>
           <h5>Javascript, HTML, CSS, React.js | Aug. - Sept. 2019</h5>
           <p>📍Created an online mini-game inspired by the traditional Simon-Game using jQuery selectors to manipulate
             DOM
@@ -232,7 +262,7 @@
           </a>
         </div>
         <div>
-          <h3>Doris's Drums</h3>
+          <div class="h3-new">Doris's Drums</div>
           <h5>Javascript, HTML, CSS | Jul. 2019</h5>
           <p>📍Using Javascript functions to implement a drum kit, detecting both "keydown" and "click" events to enable
             users to generate responses from the desired drums</p>
@@ -247,7 +277,7 @@
           </a>
         </div>
         <div>
-          <h3>Tindog🐶</h3>
+          <div class="h3-new">Tindog🐶</div>
           <h5>HTML, CSS, Bootstrap | Jul. 2019</h5>
           <p>📍Designed a dynamically-displayed front-end company website landing page using Bootstrap, HTML and CSS</p>
           <p>📍Employed features such as Nav Bars and Carousels using Bootstrap plugins</p>
@@ -258,17 +288,28 @@
     </div>
     <hr>
 
-    <div class="skills-languages">
-      <h2>My Skills & Languages </h2>
-      <p><b>Experienced</b>: C++, Javascript, Python, HTML, CSS</p>
-      <p><b>Tools</b>: Git, Bootstrap, React.js, Node.js, Express.js, MongoDB</p>
-      <p><b>Related Coursework</b>: Web Systems, User Interface Development, Information Retrieval and Web Search, Foundations of Computer Science, Computer Organization, Data Structures and Algorithms</p>
+    <div class="skill">
+      <div class="parallax skills-background">
+        <div class="parallax-title">
+          <div class="h2-new">My Skills & Languages </div>
+        </div>
+      </div>
+      <div class="skill-row">
+          <p><b>Experienced</b>: C++, Javascript, Python, HTML, CSS</p>
+          <p><b>Tools</b>: Git, Bootstrap, React.js, Node.js, Express.js, MongoDB</p>
+          <p><b>Related Coursework</b>: Web Systems, User Interface Development, Information Retrieval and Web Search,
+            Foundations of Computer Science, Computer Organization, Data Structures and Algorithms</p>
+      </div>
     </div>
     <hr>
 
-    <div class="skills" id="music">
-      <h2>My Musical Experience</h2>
-      <h3 class="projects-h3">( If music be the food of love, play on... 🌸 Click on the pics to hear my music 🎵 )</h3>
+    <div class="skill">
+      <div class="parallax music-background" id="music">
+        <div class="parallax-title">
+          <div class="h2-new">My Musical Experience</div>
+        </div>
+      </div>
+      <!-- <h3 class="projects-h3">( If music be the food of love, play on... 🌸 Click on the pics to hear my music 🎵 )</div> -->
 
       <div class="skill-row-left skill-row">
         <div>
@@ -278,7 +319,7 @@
 
         </div>
         <div>
-          <h3>Taylor Swift on Electric Cello</h3>
+          <div class="h3-new">Taylor Swift on Electric Cello</div>
           <p>💥MY OWN ARRANGEMENT of a combo of NINE Taylor Swift’s songs using an electric cello and a loop station!
           </p>
           <p>💥Live Performance for 500+ people in auditorium during Episcopal High School's Jay Walker Symposium</p>
@@ -286,13 +327,13 @@
       </div>
 
       <div class="skill-row-right skill-row">
-          <div class="experience-img-mobile">
-              <a href="https://www.youtube.com/watch?v=mzvaeISu4eY" target="_blank">
-                <img class="skills-img" src="images/doris-cello.png" alt="Doris cello">
-              </a>
-            </div>
+        <div class="experience-img-mobile">
+          <a href="https://www.youtube.com/watch?v=mzvaeISu4eY" target="_blank">
+            <img class="skills-img" src="images/doris-cello.png" alt="Doris cello">
+          </a>
+        </div>
         <div>
-          <h3>Classical Music</h3>
+          <div class="h3-new">Classical Music</div>
           <p>💥What I've been working on: Wieniawski Caprice No.18</p>
           <p>💥Coming up this semester: Korngold Cello Concerto!</p>
 
@@ -313,7 +354,7 @@
           </a>
         </div>
         <div>
-          <h3>D & J Productions</h3>
+          <div class="h3-new">D & J Productions</div>
           <p>💥Started a YouTube Channel with my best friend and now we have 7,000+ Subscribers🔝 3 videos over 100,000
             views 😱</p>
           <p>💥Our own cover and arrangement of the coolest music + funny clips of our daily struggles as cellists!!
@@ -325,13 +366,15 @@
 
     <hr>
     <div class="contact-me" id="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>If you think I have a chance of getting employed...or if you love music :)</h3>
+      <div class="h2-new">Get In Touch</div>
+      <div class="h3-new">If you think I have a chance of getting employed...or if you love music :)</div>
       <p class="contact-me-description">Let me know! <b>HIRE ME</b> as your software engineer and you get a <b>FREE</b>
         professional cellist for your wedding 😱 BEST 2-in-1 deal ever!!🤩</p>
-      <div class="contact-me-description"><div class="contact-me-info">📩 shiyeli@umich.edu</div> | <div class="contact-me-info">☎ 571-645-2460</div></div>
+      <div class="contact-me-description">
+        <div class="contact-me-info">📩 shiyeli@umich.edu</div> | <div class="contact-me-info">☎ 571-645-2460</div>
+      </div>
       <div>
-          <a class="butn" href="mailto:shiyeli@umich.edu">CONTACT ME</a>
+        <a class="butn" href="mailto:shiyeli@umich.edu">CONTACT ME</a>
       </div>
     </div>
   </div>
@@ -341,12 +384,54 @@
 
 
   <div class="bottom-container">
-    <a class="footer-link" href="https://www.facebook.com/profile.php?id=100004185165509">Facebook</a>
-    <a class="footer-link" href="https://www.youtube.com/channel/UC0BoEVnQCd63-86yZDte3yw">YouTube</a>
-    <a class="footer-link" href="https://www.linkedin.com/in/shiye-doris-li/">LinkedIn</a>
-    <a class="footer-link" href="media/Li_Doris_Resume.pdf" download="media/Li_Doris_Resume.pdf">Resume</a>
+    <div class="footer-link">
+      <a href="https://www.facebook.com/profile.php?id=100004185165509">Facebook</a>
+    </div>
+    <div class="footer-link">
+      <a href="https://www.youtube.com/channel/UC0BoEVnQCd63-86yZDte3yw">YouTube</a>
+    </div>
+    <div class="footer-link">
+      <a href="https://www.linkedin.com/in/shiye-doris-li/">LinkedIn</a>
+    </div>
+    <div class="footer-link">
+      <a href="media/Li_Doris_Resume.pdf" download="media/Li_Doris_Resume.pdf">Resume</a>
+    </div>
     <p class="copy-right">© 2021 Doris Shiye Li</p>
   </div>
+
+  <script>
+    var i = 0;
+    var txt = 'A cellist on her way to become a software engineer!';
+    var speed = 70;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("title-txt").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    // Change style of navbar on scroll
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
 </body>
 
 </html>
