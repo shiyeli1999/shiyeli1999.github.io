@@ -1,3 +1,7 @@
+:root {
+  --navbar-height: 38px;
+}
+
 body {
   color: #40514e;
   margin: 0px;
@@ -87,9 +91,19 @@ p {
   z-index: -1;
 } */
 
-.w3-bar{
+#navBar {
   position: fixed !important;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
+
+  height: var(--navbar-height);
+}
+
+#navMobile {
+  position: fixed;
+  top: var(--navbar-height);
   left: 0;
   right: 0;
   z-index: 12;
