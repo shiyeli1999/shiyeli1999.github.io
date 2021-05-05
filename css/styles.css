@@ -397,7 +397,7 @@ li a:hover:not(.active) {
   opacity: 1;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 600px) {
   h1 {
     position: absolute;
     margin-top: 10%;
