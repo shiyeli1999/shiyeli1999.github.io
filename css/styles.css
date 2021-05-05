@@ -30,9 +30,18 @@ body {
   font-weight: bold;
 }
 
-h5 {
+.h5-new {
   font-size: 17px;
   color: #008ae6;
+}
+
+.h2-blue-txt{
+  color: #316ea3;
+  font-size: 2.75rem;
+  font-family: "Indie Flower", cursive;
+  font-weight: normal;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 a {
@@ -65,10 +74,10 @@ p {
   animation: bluesky 3s;
 }
 
-.nav-bar {
+/* .nav-bar {
   text-align: left;
   margin-left: 10px;
-  z-index: 5;
+  z-index: 20;
 }
 .nav-bar a {
   margin-right: 10px;
@@ -76,16 +85,13 @@ p {
 .nav-bar a:hover {
   color: black;
   z-index: -1;
-}
+} */
 
 .w3-bar{
-  position: fixed;
-  z-index: 12;
-}
-
-.w3-bar.w3-bar-item{
-  color: green;
-  display: block;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 12;
 }
 
@@ -270,8 +276,15 @@ li a:hover:not(.active) {
   margin: 0 auto;
 }
 
+.h3-contact-me{
+  color: #316ea3;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .contact-me-description {
-  width: 40%;
+  width: 60%;
   margin: 40px auto 60px auto;
 }
 
@@ -286,7 +299,7 @@ li a:hover:not(.active) {
 }
 
 .footer-link a{
-  color: #11999e;
+  color: #316ea3;
 }
 
 .footer-link a:hover {
@@ -294,12 +307,12 @@ li a:hover:not(.active) {
 }
 
 .butn {
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  background: #316ea3;
+  background-image: -webkit-linear-gradient(top, #316ea3, #105ea3);
+  background-image: -moz-linear-gradient(top, #316ea3, #105ea3);
+  background-image: -ms-linear-gradient(top, #316ea3, #105ea3);
+  background-image: -o-linear-gradient(top, #316ea3, #105ea3);
+  background-image: linear-gradient(to bottom, #4e7aa0, #105ea3);
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
   border-radius: 8px;
@@ -311,17 +324,17 @@ li a:hover:not(.active) {
 }
 
 .butn:hover {
-  background: #30e3cd;
-  background-image: -webkit-linear-gradient(top, #30e3cd, #2bc4ad);
-  background-image: -moz-linear-gradient(top, #30e3cd, #2bc4ad);
-  background-image: -ms-linear-gradient(top, #30e3cd, #2bc4ad);
-  background-image: -o-linear-gradient(top, #30e3cd, #2bc4ad);
-  background-image: linear-gradient(to bottom, #30e3cd, #2bc4ad);
+  background: #74a5cf;
+  background-image: -webkit-linear-gradient(top, #74a5cf, #4e7aa0);
+  background-image: -moz-linear-gradient(top, #74a5cf, #4e7aa0);
+  background-image: -ms-linear-gradient(top, #74a5cf, #4e7aa0);
+  background-image: -o-linear-gradient(top, #74a5cf, #4e7aa0);
+  background-image: linear-gradient(to bottom, #74a5cf, #4e7aa0);
   text-decoration: none;
 }
 
 .copy-right {
-  color: #11999e;
+  color: #316ea3;
   font-size: 0.75rem;
   padding: 20px 0;
 }
@@ -360,6 +373,14 @@ li a:hover:not(.active) {
 }
 .music-background {
   background-image: url("../images/doris2.jpg");
+}
+
+.fade-in{
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+.fade-in.appear{
+  opacity: 1;
 }
 
 @media screen and (max-width: 520px) {
@@ -405,6 +426,7 @@ li a:hover:not(.active) {
   }
   .experience-img-mobile {
     display: inline-block;
+    text-align: center;
   }
   .projects-background {
     background-image: url("../images/doris6.jpg");
@@ -414,5 +436,8 @@ li a:hover:not(.active) {
   }
   .contact-me-description{
     width: 90%;
+  }
+  .fade-in{
+    opacity: 1;
   }
 }
