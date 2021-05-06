@@ -580,6 +580,12 @@ li a:hover:not(.active) {
   opacity: 1;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 601px){
+  .top-container-content{
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 600px) {
   h1 {
     position: absolute;
