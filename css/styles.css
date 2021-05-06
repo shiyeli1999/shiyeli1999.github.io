@@ -109,7 +109,7 @@ p {
   z-index: 12;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -139,7 +139,7 @@ li a:hover:not(.active) {
 
 .active {
   background-color: #4caf50;
-}
+} */
 
 .top-container-content {
   padding-top: 100px;
