@@ -39,7 +39,7 @@ body {
   color: #008ae6;
 }
 
-.h2-blue-txt{
+.h2-blue-txt {
   color: #316ea3;
   font-size: 2.75rem;
   font-family: "Indie Flower", cursive;
@@ -201,6 +201,15 @@ li a:hover:not(.active) {
   margin: 0 auto 0 auto;
   width: 40%;
 }
+
+.intro-small {
+  font-size: 15px;
+  font-family: "Indie Flower", cursive;
+  color: #40514e;
+  margin: 0 auto 0 auto;
+  width: 60%;
+  padding-bottom: 30px;
+}
 .bottom-cloud {
   width: 10%;
   position: absolute;
@@ -237,6 +246,168 @@ li a:hover:not(.active) {
   }
   100% {
     right: 250px;
+  }
+}
+
+.profile{
+  position: relative;
+}
+
+.blinking-star.fa-star {
+  color: #7bb5e9;
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.blinking-star {
+  -webkit-animation: blink-animation 10s infinite;
+  animation: blink-animation 10s infinite;
+}
+@keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.star2 {
+  -webkit-animation-delay: s;
+  animation-delay: 0.5s;
+}
+.blinking-star {
+  -webkit-animation: blink-animation 1s infinite, scale-animation 1s infinite;
+  animation: blink-animation 1s infinite, scale-animation 1s infinite;
+}
+.star2 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+@-webkit-keyframes scale-animation {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+}
+@keyframes scale-animation {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+.down-arrow {
+  color: #316ea3;
+  font-size: 30px;
+  position: absolute;
+  bottom: 5px;
+  left: 49.5%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.down-arrow a {
+  color: #316ea3;
+}
+
+/* Bounce animation style*/
+
+.bounce {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 60px;
+  height: 10px;
+  margin-left: -30px;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-15px);
+  }
+
+  60% {
+    -webkit-transform: translateY(-7px);
+  }
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+  }
+
+  40% {
+    -moz-transform: translateY(-15px);
+  }
+
+  60% {
+    -moz-transform: translateY(-7px);
+  }
+}
+
+@-o-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -o-transform: translateY(0);
+  }
+
+  40% {
+    -o-transform: translateY(-15px);
+  }
+
+  60% {
+    -o-transform: translateY(-7px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-15px);
+  }
+
+  60% {
+    transform: translateY(-7px);
   }
 }
 
@@ -280,17 +451,29 @@ li a:hover:not(.active) {
   margin: 10px auto 10px auto;
 }
 
-/* .skills-languages {
+
+.skills-languages {
   width: 60%;
-  margin: 100px auto 100px auto;
-} */
+  margin: 50px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.skill-flex {
+  flex-basis: 40%;
+  text-align: left;
+}
+
+.skill-lan-img{
+  height: 50px;
+  margin-bottom: 3%;
+}
 
 .contact-me {
   width: 80%;
   margin: 0 auto;
 }
 
-.h3-contact-me{
+.h3-contact-me {
   color: #316ea3;
   font-family: "Martel Sans", sans-serif;
   font-weight: bold;
@@ -312,7 +495,7 @@ li a:hover:not(.active) {
   margin-right: 2%;
 }
 
-.footer-link a{
+.footer-link a {
   color: #316ea3;
 }
 
@@ -389,11 +572,11 @@ li a:hover:not(.active) {
   background-image: url("../images/doris2.jpg");
 }
 
-.fade-in{
+.fade-in {
   opacity: 0;
   transition: opacity 200ms ease-in;
 }
-.fade-in.appear{
+.fade-in.appear {
   opacity: 1;
 }
 
@@ -420,7 +603,7 @@ li a:hover:not(.active) {
     right: 12%;
     position: absolute;
   }
-  .bottom-cloud{
+  .bottom-cloud {
     position: absolute;
     bottom: 25%;
     z-index: 8;
@@ -441,6 +624,10 @@ li a:hover:not(.active) {
   .experience-img-mobile {
     display: inline-block;
   }
+  .skills-languages{
+    flex-direction: column;
+    text-align: center;
+  }
   .mobile-img {
     text-align: center;
   }
@@ -450,10 +637,10 @@ li a:hover:not(.active) {
   .music-background {
     background-image: url("../images/doris7.jpg");
   }
-  .contact-me-description{
+  .contact-me-description {
     width: 90%;
   }
-  .fade-in{
+  .fade-in {
     opacity: 1;
   }
 }
