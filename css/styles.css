@@ -591,6 +591,9 @@ li a:hover:not(.active) {
   .intro {
     width: 90%;
   }
+  .parallax {
+    background-attachment: scroll;
+  }
   .blinking-star.fa-star {
     font-size: 30px;
   }
@@ -629,13 +632,19 @@ li a:hover:not(.active) {
   }
   .skills-languages{
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
+  }
+  .skill-flex{
+    text-align: left;
   }
   .mobile-img {
     text-align: center;
   }
   .projects-background {
     background-image: url("../images/doris6.jpg");
+  }
+  .skills-background {
+    background-image: url("../images/doris3.jpg");
   }
   .music-background {
     background-image: url("../images/doris7.jpg");
