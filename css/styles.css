@@ -591,6 +591,9 @@ li a:hover:not(.active) {
   .intro {
     width: 90%;
   }
+  .blinking-star.fa-star {
+    font-size: 30px;
+  }
   .title-txt {
     position: absolute;
     top: 50%;
