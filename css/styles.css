@@ -207,7 +207,7 @@ li a:hover:not(.active) {
   font-family: "Indie Flower", cursive;
   color: #40514e;
   margin: 0 auto 0 auto;
-  width: 60%;
+  width: 40%;
   padding-bottom: 30px;
 }
 .bottom-cloud {
@@ -256,7 +256,7 @@ li a:hover:not(.active) {
 .blinking-star.fa-star {
   color: #7bb5e9;
   font-size: 50px;
-  margin-right: 20px;
+  margin: 20px;
 }
 
 .blinking-star {
