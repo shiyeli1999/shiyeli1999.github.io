@@ -584,6 +584,12 @@ li a:hover:not(.active) {
   .top-container-content{
     height: auto;
   }
+  .projects-background {
+    background-image: url("../images/doris4.jpg");
+  }
+  .skills-background {
+    background-image: url("../images/doris3.jpg");
+  }
 }
 
 @media screen and (max-width: 600px) {
