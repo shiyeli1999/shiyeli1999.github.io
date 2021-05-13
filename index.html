@@ -10,6 +10,63 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Martel+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://kit.fontawesome.com/d48a64d3ee.js" crossorigin="anonymous"></script>
+  <script>
+    var i = 0;
+    var txt = 'A cellist on her way to become a software engineer!';
+    var speed = 70;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("title-txt").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function () { updateNavBackground() };
+    function updateNavBackground() {
+      var navBar = document.getElementById("navBar");
+      if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+        navBar.className = "w3-bar w3-card w3-white";
+      } else {
+        navBar.className = navBar.className.replace(" w3-card w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleNavbar() {
+      var navMobile = document.getElementById("navMobile");
+      if (navMobile.className.indexOf("w3-show") == -1) {
+        navMobile.className += " w3-show";
+      } else {
+        navMobile.className = navMobile.className.replace(" w3-show", "");
+      }
+    }
+
+    const appearOptions = {
+      threshold: 1
+    };
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOnScroll = new IntersectionObserver(
+      function (
+        entries, appearOnScroll
+      ) {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add("appear");
+            appearOnScroll.unobserve(entry.target);
+          }
+        })
+      }, appearOptions
+    );
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+
+  </script>
 </head>
 
 <body onload="typeWriter()">
@@ -466,64 +523,6 @@
     </div>
     <p class="copy-right">© 2021 Doris Shiye Li</p>
   </div>
-
-  <script>
-    var i = 0;
-    var txt = 'A cellist on her way to become a software engineer!';
-    var speed = 70;
-
-    function typeWriter() {
-      if (i < txt.length) {
-        document.getElementById("title-txt").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-    }
-
-    // Change style of navbar on scroll
-    window.onscroll = function () { updateNavBackground() };
-    function updateNavBackground() {
-      var navBar = document.getElementById("navBar");
-      if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
-        navBar.className = "w3-bar w3-card w3-white";
-      } else {
-        navBar.className = navBar.className.replace(" w3-card w3-white", "");
-      }
-    }
-
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function toggleNavbar() {
-      var navMobile = document.getElementById("navMobile");
-      if (navMobile.className.indexOf("w3-show") == -1) {
-        navMobile.className += " w3-show";
-      } else {
-        navMobile.className = navMobile.className.replace(" w3-show", "");
-      }
-    }
-
-    const appearOptions = {
-      threshold: 1
-    };
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOnScroll = new IntersectionObserver(
-      function (
-        entries, appearOnScroll
-      ) {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) {
-            return;
-          } else {
-            entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
-          }
-        })
-      }, appearOptions
-    );
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
-
-  </script>
 </body>
 
 </html>
