@@ -59,6 +59,10 @@ a:hover {
   color: #eaf6f6;
 }
 
+.skill-row a:hover{
+  color: blue;
+}
+
 hr {
   border-style: none;
   border-top-style: dotted;
